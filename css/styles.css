@@ -388,19 +388,20 @@ color: var(--color-rgba);
 /* ---------------------------------------------- */
 /* --------------------ПОРТФОЛИО----------------- */
 /* ---------------------------------------------- */
-.portfolio-header {
+.portfolio-section {
   margin-bottom: 94px;
 }
+
 .portfolio-button-container {
-  /* padding-bottom: 56px; */
+ margin-top: 94px;
+ margin-bottom: 34px; 
 }
 .portfolio-button-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
+    gap: 8px;
+  }
 
 .portfolio-button {
   font-family: "Roboto", sans-serif;
@@ -408,7 +409,7 @@ color: var(--color-rgba);
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  height: 38px;
+  padding: 6px 22px;  
   border: none;
   border-radius: 4px;
   background-color: var(--team-background-color);
@@ -432,7 +433,7 @@ color: var(--color-rgba);
   width: calc ((100% - 240) /9);
 }
 
-portfolio-list>.list {
+portfolio-list> .list {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
