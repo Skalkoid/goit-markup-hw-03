@@ -11,7 +11,7 @@
   --team-background-color: #f5f4fa;
   --color-borders: #eeeeee;
   --color-line: #ececec;
-}
+  }
 
 /*!Робимо reset за рекомендаціями   Андрія Данилко (не Сердючки!!!)*/
 h1,
@@ -47,7 +47,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   padding: 0px 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* прибираємо крапки списків */
@@ -97,18 +97,18 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-}
+  }
 
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 93px;
+  /*! gap: 93px; error*/
   
 }
 
-.item {
+/* .item {
   flex-basis: calc((100% - 60px) / 3);
-}
+} */
 
 .logo-black {
   color: var(--black-logo);
@@ -119,8 +119,8 @@ img {
 .header-list {
   display: flex;
   gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+ padding-top: 32px;
+ padding-bottom: 32px;
   align-items: center;
 }
 
@@ -129,6 +129,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 
@@ -136,8 +138,9 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* !padding-top: 32px;
+  !padding-bottom: 32px; */
+  gap: 50px;
 }
 .header-contact:not(:last-child) {
   margin-right: 50px;
@@ -165,14 +168,6 @@ img {
 /* ------------hero-------------- */
 
 .hero {
-  color: var(--white-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 30px;
   margin: 0;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -192,20 +187,15 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
-  padding-bottom: 30px;
-  margin: 0 auto;
+  margin-bottom: 30px;
+  
 }
 
 .hero-button {
-  display: inline-block;
-  border-radius: 4px;
-  font-size: 16px;
-  width: 216px;
+    border-radius: 4px;
+    width: 216px;
   padding: 10px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
+  border:none;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -233,8 +223,7 @@ img {
 
 .features-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  gap: 30px;
 }
 
 .select-features:not(:last-child) {
@@ -244,9 +233,7 @@ img {
 .card-features {
   display: block;
   width: 270px;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .features-title {
@@ -267,11 +254,14 @@ img {
 /* Чим займаємось */
 .section-work {
   text-align: center;
+    padding-top: 0;
+}
+.section-title-work {
   margin-bottom: 50px;
-  padding-top: 0;
 }
 .work-list {
   display: flex;
+  gap: 30px;
 }
 .work-list .item:not(:last-child) {
   margin-right: 30px;
@@ -288,7 +278,7 @@ img {
 .team-section {
   background-color: var(--team-background-color);
   text-align: center;
-  margin-bottom: 50px;
+ 
 }
 .team-list {
   display: flex;
@@ -299,7 +289,7 @@ img {
 }
 .team-card {
   display: block;
-  background-color: var(--color-white);
+  background-color: var(--white-background-color);
   width: 270px;
   font-size: 16px;
   line-height: 1.19;
@@ -307,8 +297,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 10px;
-}
+  }
 .team-card .title {
   font-weight: 500;
   font-size: 16px;
@@ -317,15 +306,15 @@ img {
 }
 .card-text {
   display: block;
-   margin: 0;
-   padding: 30px 0;
+  margin: 0;
+  padding: 30px 0;
   }
 
 
 .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
 }
 
@@ -334,7 +323,7 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* ----------------ПОДВАЛ----------------- */
@@ -372,6 +361,7 @@ color: var(--color-rgba);
 }
 .footer-contact-list {
   display: block;
+  
 }
 .footer-contact-list .item:not(:last-child) {
   margin-bottom: 9px;
@@ -402,7 +392,7 @@ color: var(--color-rgba);
   margin-bottom: 94px;
 }
 .portfolio-button-container {
-  padding-bottom: 56px;
+  /* padding-bottom: 56px; */
 }
 .portfolio-button-list {
   display: flex;
@@ -418,15 +408,20 @@ color: var(--color-rgba);
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
   background-color: var(--team-background-color);
   color: var(--primary-text-color);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -436,6 +431,19 @@ color: var(--color-rgba);
   flex-wrap: wrap;
   width: calc ((100% - 240) /9);
 }
+
+portfolio-list>.list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-list-block {
+  padding: 20px 24px;
+    border: 1px solid var(--color-borders);
+    border-top-width: 0;
+}
+
 .portfolio-list-title {
   font-weight: 700;
   font-size: 18px;
@@ -450,3 +458,4 @@ color: var(--color-rgba);
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
+
