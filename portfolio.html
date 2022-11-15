@@ -18,7 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- !вставляємо нормалізатор -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -59,8 +58,9 @@
     </header>
     <!-- Основной контент -->
     <main>
-      <section class="portfolio-section">
-        <div class="container portfolio-button-container">
+      <section class="section">
+        <div class="container">
+          <h1 hidden>Наші проєкти</h1>
           <ul class="list portfolio-button-list">
             <li>
               <button class="portfolio-button" type="button">Усі</button>
@@ -78,8 +78,7 @@
               <button class="portfolio-button" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <div class="container portfolio-container">
+
           <ul class="portfolio-list">
             <li class="list">
               <img src="./images/page-2/img1.jpg" alt="фото трьох осіб" />
@@ -191,39 +190,40 @@
       </section>
     </main>
 
-    <!-- Підвал -->
+    <!--5 блок Підвал-->
     <footer class="footer">
       <div class="container">
-        <a class="logo-footer link" href="./index.html"
-          ><span class="logo-color">Web</span>Studio</a
-        >
-        <br />
-        <!-- список контактів -->
-        <address class="adress-footer list">
-          <ul class="list footer-contact-list">
-            <li class="item">
-              <a
-                class="footer-contact-link primary-footer"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                href="https://goo.gl/maps/Gvm3JpzEVhX5uXV29"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="item">
-              <a
-                class="footer-contact-link link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a class="footer-contact-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer-adress-block">
+          <a class="logo-footer link" href="./index.html"
+            ><span class="logo-color">Web</span>Studio</a
+          >
+          <!-- список контактів -->
+          <address class="adress-footer list">
+            <ul class="list footer-contact-list">
+              <li class="item">
+                <a
+                  class="footer-contact-link primary-footer"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://goo.gl/maps/Gvm3JpzEVhX5uXV29"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a
+                  class="footer-contact-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="footer-contact-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>

@@ -47,7 +47,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   padding: 0px 15px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 /* прибираємо крапки списків */
@@ -119,8 +119,6 @@ img {
 .header-list {
   display: flex;
   gap: 50px;
- padding-top: 32px;
- padding-bottom: 32px;
   align-items: center;
 }
 
@@ -152,6 +150,8 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-nav-link:hover,
@@ -218,7 +218,8 @@ img {
 /* блок Переваги */
 
 .section {
-  padding: 94px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -233,8 +234,7 @@ img {
 .card-features {
   display: block;
   width: 270px;
-    margin-bottom: 10px;
-}
+    }
 
 .features-title {
   font-weight: 700;
@@ -242,7 +242,7 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -257,7 +257,9 @@ img {
     padding-top: 0;
 }
 .section-title-work {
-  margin-bottom: 50px;
+  font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -337,6 +339,11 @@ img {
   background-color: var(--hero-background-color);
   color: var(--footer-text-color)
 }
+.footer-adress-block {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo-footer {
   display: inline-block;
     text-decoration: none;
@@ -388,19 +395,18 @@ color: var(--color-rgba);
 /* ---------------------------------------------- */
 /* --------------------ПОРТФОЛИО----------------- */
 /* ---------------------------------------------- */
-.portfolio-section {
-  margin-bottom: 94px;
-}
 
-.portfolio-button-container {
+
+/* .portfolio-button-container {
  margin-top: 94px;
- margin-bottom: 34px; 
-}
+ margin-bottom: 34px;  */
+/* } */
 .portfolio-button-list {
   display: flex;
   justify-content: center;
   align-items: center;
     gap: 8px;
+    margin-bottom: 50px;
   }
 
 .portfolio-button {
@@ -450,8 +456,8 @@ portfolio-list> .list {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  /* padding-top: 20px; */
+  margin-bottom: 4px;
 }
 
 .portfolio-list-text {
